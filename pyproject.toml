@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "separation-platform"
+version = "0.1.0"
+description = "Separation Platform Brazil — desktop FAV8+ silk screen separation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6>=6.6",
+    "pillow>=10.0",
+    "numpy>=1.26",
+    "opencv-python>=4.8",
+    "scikit-image>=0.22",
+    "scipy>=1.11",
+    "psd-tools>=1.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-qt>=4.2",
+    "ruff>=0.1",
+    "mypy>=1.7",
+    "pyinstaller>=6.0",
+]
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "apps",
+    "apps.desktop_qt",
+    "apps.desktop_qt.*",
+    "packages",
+    "packages.core",
+    "packages.core.*",
+    "packages.image",
+    "packages.image.*",
+    "packages.infra",
+    "packages.infra.*",
+    "packages.prepress",
+    "packages.prepress.*",
+    "packages.skills",
+    "packages.skills.fav8_plus",
+    "packages.skills.fav8_plus.*",
+    "packages.skills.separate_channels",
+    "packages.skills.separate_channels.*",
+]
+
+[tool.setuptools.package-data]
+"apps.desktop_qt" = ["themes/*.qss"]
+"packages.skills.fav8_plus" = ["tune_profile.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+qt_api = "pyside6"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [
+    "build",
+    "dist",
+    "entulho",
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
