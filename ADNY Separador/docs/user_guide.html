@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ADNY Separador — Guia do usuário</title>
+<style>
+  body { font-family: Segoe UI, Arial, sans-serif; max-width: 860px; margin: 2em auto; color: #222; line-height: 1.45; }
+  h1 { border-bottom: 3px solid #3d8fe0; padding-bottom: .3em; }
+  h2 { color: #23476e; margin-top: 1.6em; }
+  kbd { background: #eee; border: 1px solid #bbb; border-radius: 3px; padding: 0 4px; font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { border: 1px solid #ccc; padding: 4px 8px; text-align: left; vertical-align: top; }
+  th { background: #f0f4fa; }
+</style>
+</head>
+<body>
+<h1>ADNY Separador — Guia do usuário</h1>
+<p>Separador de canais para simulado serigráfico.</p>
+<p>Interface para separação de cores na estamparia, com motor FAV8+ (Spot Process).</p>
+
+<h2>1. Abrir e separar</h2>
+<p><b>Arquivo &gt; Abrir...</b> (<kbd>Ctrl+O</kbd>) carrega a arte e separa automaticamente.
+Cada cor aparece na barra de separações embaixo e como caixa em
+<b>Separações ativas</b> na barra Main.</p>
+
+<h2>2. Separações ativas</h2>
+<p>As ferramentas de edição (Encharcar, Borracha, Editar &gt; Excluir, Ajustar separações) só alteram as
+<b>ativas</b>. Use as caixas, <b>Marcar todas</b> e <b>Desmarcar todas</b> na barra Main.</p>
+
+<h2>3. Ferramentas</h2>
+<table>
+<tr><th>Ferramenta</th><th>Uso</th></tr>
+<tr><td>Mover</td><td>Arraste para deslocar a imagem.</td></tr>
+<tr><td>Zoom</td><td>Clique para ampliar; <kbd>Alt</kbd>+clique ou botão direito para reduzir.</td></tr>
+<tr><td>Laço / Laço poligonal / Seleção retangular</td><td>Selecione uma área. Laço poligonal: clique nos vértices,
+duplo clique ou <kbd>Enter</kbd> para fechar.</td></tr>
+<tr><td>Conta-gotas</td><td>Clique numa cor: seleciona pixels parecidos, marca a separação dominante
+na barra e mostra X/Y/Densidade na barra de status. <kbd>Shift</kbd>+clique soma à seleção.</td></tr>
+<tr><td>Encharcar</td><td>Pinte para aumentar a densidade de tinta das separações ativas; segure <kbd>Alt</kbd>
+para aliviar. Cada traço vira um passo de Desfazer.</td></tr>
+<tr><td>Borracha</td><td>Pinte para apagar tinta das separações ativas. Cada traço vira um passo de Desfazer.</td></tr>
+</table>
+
+<h2>4. Menu Editar</h2>
+<ul>
+<li><b>Desfazer / Refazer</b> (<kbd>Ctrl+Z</kbd> / <kbd>Ctrl+Y</kbd>).</li>
+<li><b>Desmarcar seleção</b> (<kbd>Ctrl+D</kbd>) e <b>Inverter seleção</b> (<kbd>Ctrl+Shift+I</kbd>): a seleção passa a ser
+a imagem inteira menos a anterior.</li>
+<li><b>Excluir</b> (<kbd>Del</kbd>): apaga a tinta das separações ativas dentro da seleção.</li>
+<li><b>Impressora padrão...</b> (<kbd>Ctrl+E</kbd>): impressora, mídia, resolução, meio-tom e filme
+gravados nas preferências.</li>
+</ul>
+
+<h2>5. Menu Separações</h2>
+<p>Realçar vermelho/laranja, Gerar marrom, Fundir cinza/roxo/turquesa, Criar base branca, Encaixe na mesa,
+Ajustar separações (<kbd>Ctrl+J</kbd>) e Ajuste automático. Tudo pode ser desfeito.</p>
+
+<h2>6. Exibir</h2>
+<p>Ampliar/Reduzir, Preencher janela, Ajustar à tela, Pixels reais e <b>Igualar zoom</b> (aplica o zoom da
+janela ativa a todas). Vistas Prova positiva / Tinta / Filme e Mostrar cor do tecido.</p>
+
+<h2>7. Impressão</h2>
+<p><b>Arquivo &gt; Imprimir...</b> (<kbd>Ctrl+P</kbd>) abre o Print Commander para saída dos filmes.</p>
+</body>
+</html>

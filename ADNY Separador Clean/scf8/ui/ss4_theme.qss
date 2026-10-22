@@ -1,0 +1,38 @@
+/* ADNY Separador — aparência clássica (cinza + barra escura) */
+QMainWindow { background-color: #636363; }
+QMenuBar {
+  background-color: #dcdcdc;
+  color: #000000;
+  border-bottom: 1px solid #999;
+}
+QMenuBar::item:selected { background: #c0c0c0; }
+QMenu { background-color: #f0f0f0; color: #000; }
+QToolBar {
+  background-color: #484848;
+  border: none;
+  spacing: 3px;
+  padding: 2px;
+}
+QToolBar QToolButton {
+  color: #f5f5f5;
+  background: #555;
+  border: 1px solid #777;
+  padding: 6px 8px;
+  margin: 1px;
+}
+QToolBar QToolButton:checked { background: #2d6ca2; border-color: #1e4f7a; }
+QToolBar#ss4_print QToolButton {
+  font-weight: bold;
+  min-width: 72px;
+  background: #3a7fc1;
+  border-color: #255a8a;
+}
+QStatusBar { background: #484848; color: #eee; }
+QDockWidget { color: #eee; }
+QDockWidget::title {
+  background: #505050;
+  padding: 4px;
+  text-align: left;
+}
+QScrollArea { background: #404040; border: none; }
+#ss4ChannelTile { background: transparent; }
