@@ -3,10 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "separation-platform"
+name = "adny-separador"
 version = "0.1.0"
-description = "Separation Platform Brazil — desktop FAV8+ silk screen separation"
-readme = "README.md"
+description = "Separador de canais para simulado serigráfico."
 requires-python = ">=3.11"
 dependencies = [
     "PySide6>=6.6",

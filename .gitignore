@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+.setuptools-build/
+*.egg-info/
+*.log
+
+# Pacotes locais de download; publicar os ZIPs em GitHub Releases.
+docs/downloads/*.zip
+
+# Executaveis completos sao distribuidos nas Releases.
+/dist/
+/release/

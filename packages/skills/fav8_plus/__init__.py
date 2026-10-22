@@ -1,0 +1,63 @@
+"""API pública do ADNY Separador (BETA 0.01) — evolução do motor FAV8+ independente."""
+
+from packages.skills.fav8_plus.engine import ENGINE_NAME, ENGINE_RELEASE, ENGINE_VERSION, Fav8Engine
+from packages.skills.fav8_plus.loader import fav8_plus_engine_available, fav8_plus_missing_message
+from packages.skills.fav8_plus.ink_library import (
+    InkDefinition,
+    InkLibrarySnapshot,
+    default_ink_library,
+)
+from packages.skills.fav8_plus.models import (
+    ArchetypeResolution,
+    ArtworkDNA,
+    ChannelPlate,
+    Fav8Config,
+    Fav8Mode,
+    KeyPlateConfig,
+    KeyPlateMode,
+    KeyPlateReport,
+    ManifestEntry,
+    MeasuredInkLab,
+    MeasurementProvenance,
+    MeasurementSource,
+    PhysicalMeasurementProfile,
+    PhysicalModel,
+    ResolvedFav8Mode,
+    SeparationDiagnostics,
+    SeparationManifest,
+    SeparationResult,
+    SimProcessConfig,
+    SS4_FIXED_PALETTE,
+)
+
+__all__ = [
+    "ENGINE_NAME",
+    "ENGINE_RELEASE",
+    "ENGINE_VERSION",
+    "ArchetypeResolution",
+    "ArtworkDNA",
+    "ChannelPlate",
+    "Fav8Config",
+    "Fav8Engine",
+    "Fav8Mode",
+    "InkDefinition",
+    "InkLibrarySnapshot",
+    "KeyPlateConfig",
+    "KeyPlateMode",
+    "KeyPlateReport",
+    "ManifestEntry",
+    "MeasuredInkLab",
+    "MeasurementProvenance",
+    "MeasurementSource",
+    "PhysicalMeasurementProfile",
+    "PhysicalModel",
+    "ResolvedFav8Mode",
+    "SeparationDiagnostics",
+    "SeparationManifest",
+    "SeparationResult",
+    "SimProcessConfig",
+    "SS4_FIXED_PALETTE",
+    "default_ink_library",
+    "fav8_plus_engine_available",
+    "fav8_plus_missing_message",
+]

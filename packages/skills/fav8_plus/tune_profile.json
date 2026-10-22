@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "profile_version": "loop-v2-meta-80.1",
+  "engine": {
+    "hue_gate_strength": 0.4,
+    "gray_chroma_max": 12.0,
+    "gray_l_mid": 55.0
+  },
+  "channels": {},
+  "calibration": {
+    "base_white": {
+      "offset": 0.25
+    },
+    "red": {
+      "offset": -0.12,
+      "scale": 0.92
+    },
+    "blue": {
+      "offset": -0.12,
+      "scale": 0.92
+    },
+    "gold_yellow": {
+      "offset": -0.2
+    },
+    "green": {
+      "offset": -0.16,
+      "scale": 0.92
+    },
+    "purple": {
+      "offset": -0.04,
+      "scale": 0.92
+    },
+    "turquoise": {
+      "offset": -0.12,
+      "scale": 0.92
+    },
+    "gray": {
+      "offset": -0.03
+    },
+    "highlight_white": {
+      "offset": 0.08
+    }
+  },
+  "logic_version": 0,
+  "v2": true,
+  "source": "loop_v2_meta_80_tune_state"
+}
