@@ -1,0 +1,1 @@
+window.ADNY_SITE = {"downloads": {"clean": "https://github.com/adnyestampa-dot/ADNY-Separador-de-canais/releases/latest/download/ADNY-Separador-Clean-Windows-x64.zip", "completa": "https://github.com/adnyestampa-dot/ADNY-Separador-de-canais/releases/latest/download/ADNY-Separador-Completa-Windows-x64.zip"}};
